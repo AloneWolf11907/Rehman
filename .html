@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="heading">
+    <h1 id="title"> Survey For Programming</h1>
+    <p id="description">This Survey is about to collect information about Programming </p>
+</div>
+    <form id="survey-form">
+        <div class="personal-info">
+            <label id="full-name" for="name">Full Name: <input id="name" type="text" placeholder="Hadi Rehman"></label>
+            <br>
+            <label id="email" for="email">Email: <input id="email" type="email"  placeholder="hadi@email.com"></label>
+            <br>
+            <label id="phoneNo" for="phoneNo">PhoneNo: <input id="phoneNo" type="tel"  placeholder="023-8659-7894"></label>
+            <br>
+            <label id="age" for="age">Age: <input id="age" type="number" min="16" max="120"></label>
+
+        </div>
+        <div class="current-status">
+            <p id="title">Whats Your Current Status</p>
+            <select id="status">
+                <option disabled selected value="choose one" >Choose one</option>
+                <option>Student</option>
+                <option>Employee</option>
+                <option>Frelancer</option>
+                <option>Enterpreneure</option>
+                <option>Own bussiness</option>
+            </select>
+        </div><br>
+
+        <div class="gender">
+            <label for="male"><input id="male" value="male" type="radio">Male</label>
+            <label for="female"><input id="female" value="female" type="radio">Female</label>
+        </div>
+        <div class="reccommend">
+            <p id="title"> Will you reccommend our Website to you friends and Family members</p>
+            <label for="definitely"><input id="definitely" type="radio" value="definitely">Definitely</label>
+            <label  for="maybe"><input id="maybe" type="radio" value="maybe">Maybe</label>
+            <label for="not-sure"><input id="not-sure" type="radio" value="not-sure">Not-Sure</label>
+        </div>
+        <div class="about-us">
+            <p id="like">What do you like about us?</p>
+           <select id="slect-option" required>
+                <option disabled selected value>Select an option</option>
+                <option>Challanges</option>
+                <option>Projects</option>
+                <option>Community</option>
+                <option>Problem Solving</option>
+                <option>Experts</option> 
+            </select>
+        
+        </div>
+        <div class="inline">
+            <p id="inline">Give Suggestion How we can improve</p>
+            <label for="prefer">
+            <input name="prefer" type="checkbox" value="frontend" class="inline">
+             Frotend</label><br>
+           <label for="prefer"><input name="prefer" type="checkbox" value="backend" class="inline">
+           Backend</label><br>
+           <label for="prefer"><input name="prefer" type="checkbox" value="gitter-help" class="inline">
+        Gitter-Hub</label><br>
+        <label for="prefer"><input name="prefer" type="checkbox" value="vidoes" class="inline">
+        Videos</label><br>
+        <label for="prefer"><input name="prefer" type="checkbox" value="datavisualization" class="inline">
+        DataVisualization</label><br>
+        <label for="prefer"><input name="prefer" type="checkbox" value="github" class="inline">
+        GitHub</label>
+        </div>
+        <div class="suggestion">
+            <label for="suggestion"><textarea id="suggestion" name="suggestion" rows="3" cols="30" placeholder="Plz write Anything Yo want to tell us"></textarea></label>
+        </div>
+        <div class="terms">
+            <label><input id="terms" name="terms" value="terms" type="checkbox" required> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/"> terms and Conditions</a></label>
+        </div><br>
+        <div class="button">
+            <input id="submit" value="submit" type="button" action="submit">
+        </div>
+
+
+    </form>
+</body>
+</html>

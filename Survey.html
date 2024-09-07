@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey.css" />
+  </head>
+  <body>
+    <h1 id="title">Surevy Form For Programming</h1>
+    <p id="description">Please Give the Information below for the Programming Survey</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label id="name-label" for="name">First Name: <input id="name" name="name" type="text" placeholder="Hadi" required /></label></br> 
+        <label for="last-name" id="lname-label" >Last Name: <input id="lname" name="lname" type="text" placeholder="Rehman" required /></label><br>
+        <label id="email-label" for="email">Enter Your Email: <input id="email" name="email" type="email" placeholder="hadi@email.com" required /></label><br>
+        <label id="number-label" for="tel-number">Contact (Tel No#): <input id="tel-number" name="tel-number" type="tel" placeholder=032-6598-7859  required ></label><br>
+        <label id="number-label" for="age">Age (years): <input id="number" type="number" name="age" min="13" max="120" placeholder="25" /></label>
+      </fieldset>
+      <fieldset>
+      <div>
+        <p>Whats Your Current Status</p>
+        <select id="dropdown" name="role" class="form-control">
+          <option>Student</option>
+          <option>Employee</option>
+          <option>Interpreneur</option>
+          <option>freelancer</option>
+          <option>Own Bussiness</option>
+        </select>
+      </div></fieldset>
+      <fieldset>
+        <legend>Gender</legend>
+        <label for="Male"><input value="male" id="gender" type="radio" name="account-type" class="inline" checked />Male</label>
+        <label for="female"><input value="female" id="female" type="radio" name="account-type" class="inline" /> Female</label>
+      </fieldset>
+      <fieldset class="form-group">
+          <p>Would you recommend OurWebsite to a People you Know?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="inline"
+              checked
+            />Definitely</label>
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="inline"
+            />Maybe</label>
+
+          <label><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="inline"
+            />Not sure</label>
+      </fieldset>
+      <fieldset class="form-group">
+          <p>What you like about our Us?</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="openSource">Open Source</option>
+          </select>
+        
+      </fieldset>
+      <fieldset class="form-group">
+          <p>
+            What you want us to Improve?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+            <label
+            ><input
+              name="prefer"
+              value="front-end-projects"
+              type="checkbox"
+              class="inline"/>Front-end Projects</label>
+              <label
+            ><input
+              name="prefer"
+              value="front-end-projects"
+              type="checkbox"
+              class="inline"/>Back-end Projects</label>
+              <label
+            ><input
+              name="prefer"
+              value="front-end-projects"
+              type="checkbox"
+              class="inline"/>Gitter Help Rooms</label>
+              <label
+            ><input
+              name="prefer"
+              value="front-end-projects"
+              type="checkbox"
+              class="inline"/>Videos</label>
+              <label
+            ><input
+              name="prefer"
+              value="front-end-projects"
+              type="checkbox"
+              class="inline"/>Data Visualization</label>
+</fieldset>
+      <fieldset>
+        <label for="suggestion">Provide a Suggesstion:
+          <textarea id="suggestion" name="Suggestion" rows="3" cols="30" placeholder="I would suggest..."></textarea>
+        </label>
+      </fieldset>
+      <label for="terms-and-conditions">
+        <input value="terms" class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a><br>
+      </label>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

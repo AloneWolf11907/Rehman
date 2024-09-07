@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Food Restaurant Management</title>
+    <link rel="stylesheet" href="RSstyles.css">
+</head>
+<body>
+    <header>
+        <h1>Fast Food Restaurant</h1>
+    </header>
+    <main>
+        <section id="order-section">
+            <h2>Order Menu</h2>
+            <form id="order-form">
+                <label for="item">Select Item:</label>
+                <select id="item" name="item">
+                    <option value="burger" data-price="5">Burger - $5</option>
+                    <option value="fries" data-price="3">Fries - $3</option>
+                    <option value="soda" data-price="2">Soda - $2</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1">
+                <button type="button" onclick="addItem()">Add to Order</button>
+            </form>
+        </section>
+        <section id="order-summary">
+            <h2>Order Summary</h2>
+            <ul id="order-list"></ul>
+            <p>Total: $<span id="total">0</span></p>
+            <button onclick="clearOrder()">Clear Order</button>
+        </section>
+        <section id="payment-section">
+            <h2>Payment</h2>
+            <label for="cash">Cash Received:</label>
+            <input type="number" id="cash" name="cash" min="0">
+            <button onclick="processPayment()">Process Payment</button>
+            <p>Change to Give: $<span id="change">0</span></p>
+        </section>
+        <section id="print-receipt-section">
+            <h2>Print Receipt</h2>
+            <button onclick="printReceipt()">Print Receipt</button>
+            <div id="receipt" style="display: none;">
+                <h1>Fast Food Restaurant</h1>
+                <h2>Receipt</h2>
+                <ul id="receipt-list"></ul>
+                <p>Total: $<span id="receipt-total">0</span></p>
+                <p>Cash Received: $<span id="receipt-cash">0</span></p>
+                <p>Change Given: $<span id="receipt-change">0</span></p>
+            </div>
+        </section>
+    </main>
+    <div id="receipt-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeReceipt()">&times;</span>
+            <h1>Fast Food Restaurant</h1>
+            <h2>Receipt</h2>
+            <ul id="receipt-list"></ul>
+            <p>Total: $<span id="receipt-total">0</span></p>
+            <p>Cash Received: $<span id="receipt-cash">0</span></p>
+            <p>Change Given: $<span id="receipt-change">0</span></p>
+            <button onclick="printReceipt()">Print Receipt</button>
+        </div>
+    </div>
+    <script src="RSscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+body{
+    font-family:cursive;
+    background-image: url('https://img.freepik.com/free-vector/clipboard-with-survey-chronometer_23-2147611001.jpg?w=740&t=st=1724220901~exp=1724221501~hmac=0983db604e13b7caf5ae2f7e9bacb05341a0790a2e1954c3fd4cd6e5847d29be');
+    background-color: antiquewhite;
+    text-align: center;
+    text-shadow: 0lvi;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    font-size: 16px;
+    
+}
+* {
+    box-sizing: border-box;
+  }
+.form-group {
+    white-space: nowrap; /* Prevents the label and input from wrapping to the next line */
+  
+}
+  
+  
+  label {
+    margin-right: 10px; /* Adds space between the label and input */
+  }
+
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+  }
+
+  form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    background-color: beige;
+    
+  }
+  div{
+
+        border: none;
+        padding: 2rem 0;
+        border-bottom: 3px rgb(154, 128, 88) #3b3b4f;
+        
+      
+      
+  }
+  div:last-of-type {
+    border-bottom: none;
+  }
+  
+  /*label {
+    display: block;
+    margin: 0.5rem 0;
+  }*/
+  label,input,
+textarea,
+select {
+    display: inline;
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+    accent-color: orange;
+    
+}
+
+input, textarea {
+    display: inline;
+  background-color: #b7b7d8;
+  border: 1px solid #6c6c7b;
+  color: #ffffff;
+  
+}
+input[type="submit"] {
+    display: inline;
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #6c6c7a;
+    border-color: rgb(230, 176, 176);
+    min-width: 300px;
+    
+  }
+  button{
+    border-radius: calc(1.25rem);
+    width: 3px;
+    height: 1px;
+    align-items: center;
+  }
+  label,input[type="file"] {
+    display: inline;
+    padding: 1px 2px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  a{
+    color:#6c6cb9;
+  }
+  .inline{
+    display: inline; 
+    
+  }
+  
+  .input-radio,
+  .input-checkbox {
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+  }
+  
